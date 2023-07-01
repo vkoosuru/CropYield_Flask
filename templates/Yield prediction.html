@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title> Website design </title>
+        <link rel="stylesheet" href=".\static\styleu.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="/"><img src=".\static\mylogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="times"onclick="hideMenu()"><img src=".\static\icons8-close-30.png" ></i>
+                    <ul>
+                        <li><a href="/" >HOME</a></li>
+                <li><a href="/Yield" >YIELD PREDICTION</a></li>
+                <li><a href="/data" >DATA</a></li>
+                <li><a href="/blog" >BLOG</a></li>
+                    </ul>
+                </div>
+                <i class="fa" onclick="showMenu()"><img src=".\static\icons8-menu-24.png" ></i>
+            </nav>
+            
+        </section>
+        <section class="seperate">
+        <div class="center">
+            
+            <h1>Yield Prediction</h1>
+            <form  action="/predict" method="post">
+                
+                <div class="txt_field">
+                    <br>
+                    <br>
+                    <label for="district">District</label>
+                    <br>
+                    <br>
+                    <select class="options" id="district" name="district">
+                        <option value="District_Adilabad">Adilabad</option>
+                        <option value="District_Bhadradri Kothagudem">Bhadradri Kothagudem</option>
+                        <option value="District_Jagtial">Jagtial</option>
+                        <option value="District_Jangoan">Jangoan</option>
+                        <option value="District_Jayashankar Bhoopalpally">Jayashankar Bhoopalpally</option>
+                        <option value="District_Jogulamba Gadwal">Jogulamba Gadwal</option>
+                        <option value="District_Kamareddy">Kamareddy</option>
+                        <option value="District_Karimnagar">Karimnagar</option>
+                        <option value="District_Khammam">Khammam</option>
+                        <option value="District_Komaram bheem asifabad">Komaram bheem asifabad</option>
+                        <option value="District_Mahabubabad">Mahabubabad</option>
+                        <option value="District_Mahabubnagar">Mahabubnagar</option>
+                        <option value="District_Mancherial">Mancherial</option>
+                        <option value="District_Medak">Medak</option>
+                        <option value="District_Medchal-Malkajgiri">Medchal-Malkajgiri</option>
+                        <option value="District_Mulug">Mulug</option>
+                        <option value="District_Nagarkurnool">Nagarkurnool</option>
+                        <option value="District_Nalgonda">Nalgonda</option>
+                        <option value="District_Narayanpet">Narayanpet</option>
+                        <option value="District_Nirmal">Nirmal</option>
+                        <option value="District_Nizamabad">Nizamabad</option>
+                        <option value="District_Peddapalli">Peddapalli</option>
+                        <option value="District_Rajanna Sircilla">Rajanna Sircilla</option>
+                        <option value="District_Rangareddy">Rangareddy</option>
+                        <option value="District_Sangareddy">Sangareddy</option>
+                        <option value="District_Siddipet">Siddipet</option>
+                        <option value="District_Suryapet">Suryapet</option>
+                        <option value="District_Vikarabad">Vikarabad</option>
+                        <option value="District_Wanaparthy">Wanaparthy</option>
+                        <option value="District_Warangal">Warangal</option>
+                        <option value="District_Hanumakonda">Hanumakonda</option>
+                        <option value="District_Yadadri Bhuvanagiri">Yadadri Bhuvanagiri</option>
+                    </select>
+                </div>
+
+                <div class="txt_field">
+            
+                    <label for="season">Season</label>
+                    <br>
+                    <br>
+                    <br>
+                    <select class="options" id="season" name="season">
+                        <option value="kharif">Kharif</option>
+                        <option value="rabi">Rabi</option>
+                      </select>
+                    </div>
+
+                <div class="txt_field">
+                    <label for="crop">Crop</label>
+                    <br>
+                    <br>
+                    <br>
+                    <select class="options" id="crop" name="crop">
+                        <option value="cotton(lint)">cotton(lint)</option>
+                        <option value="Maize">Maize</option>
+                        <option value="Moong(Green Gram)">Moong(Green Gram)</option>
+                        <option value="Rice">Rice</option>
+                        <option value="Groundnut">Groundnut</option>
+                    </select>
+                </div>
+
+                <div class="txt_field">
+                    <input required type="number" step="any"  min="0.5" max="283" name="rainfall" value="87.9">
+                    <span></span>
+                    <label>Rainfall(mm)</label>
+                </div>
+                <div class="txt_field">
+                    <input required type="number" step="any" name="Minimum temperature" value="23.13" min="2" max="40">
+                    <span></span>
+                    <label>Minimum Temperature(C)</label>
+                </div>
+                <div class="txt_field">
+                    <input required type="number" step="any" name="Maximum temperature" value="40.34" min="25" max="55">
+                    <span></span>
+                    <label>Maximum Temperature(C)</label>
+                </div>
+                <div class="txt_field">
+                    <input required type="number" step="any" name="ph" value="7.26" min="1" max="14">
+                    <span></span>
+                    <label>pH</label>
+                </div>
+                <div class="txt_field">
+                    <input required type="number" step="any" name="n" value="219" >
+                    <span></span>
+                    <label>N (Kg/Hectar)</label>
+                </div>
+                <div class="txt_field">
+                    <input required type="number" step="any" name="p" value="34.37">
+                    <span></span>
+                    <label>P (Kg/Hectar)</label>
+                </div>
+                <div class="txt_field">
+                    <input required type="number" step="any" name="k" value="304.37">
+                    <span></span>
+                    <label>K (Kg/Hectar)</label>
+                </div>
+                <div class="txt_field">
+                    <input required type="number" step="any" name="zn" value="1.37">
+                    <span></span>
+                    <label>Zn (ppm)</label>
+                </div>
+                <div class="txt_field">
+                    <input required type="number" step="any" name="fe" value="13.6">
+                    <span></span>
+                    <label>Fe (ppm)</label>
+                </div>
+                <div class="txt_field">
+                    <input required type="number" step="any" name="cu" value="1.88">
+                    <span></span>
+                    <label>Cu (ppm)</label>
+                </div>
+                <div class="txt_field">
+                    <input required type="number" step="any" name="mn" value="12.79">
+                    <span></span>
+                    <label>Mn (ppm)</label>
+                </div>
+                <div class="txt_field">
+                    <input required type="number" step="any" name="irrigation" value="11.48" min="1" max="33">
+                    <span></span>
+                    <label>Irrigation (MBGL)</label>
+                </div>
+                
+                    <input type="submit" value="Predict">
+                    
+                    
+            </form>
+            <br>
+            <p id="output"><h1>Predicted Yield: <b>{{out}}</b></h1>
+           </p>
+        </div>
+    </section>
+    
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+        <!--footer-->
+        <section class="footer">
+            <ul>
+                <li><a href="/" >HOME</a></li>
+                <li><a href="/Yield" >YIELD PREDICTION</a></li>
+                <li><a href="/data" >DATA</a></li>
+                <li><a href="/blog" >BLOG</a></li>
+                </ul>
+                <p>Made by Koosuru Vardhini</p>
+        </section>
+
+        <!---Javascript code-->
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+         
+    </body>
+</html>

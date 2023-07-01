@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title> BLOG </title>
+        <link rel="stylesheet" href=".\static\styleu.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="/"><img src=".\static\mylogo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="times"onclick="hideMenu()"><img src=".\static\icons8-close-30.png" ></i>
+                    <ul>
+                        <li><a href="/" >HOME</a></li>
+                <li><a href="/Yield" >YIELD PREDICTION</a></li>
+                <li><a href="/data" >DATA</a></li>
+                <li><a href="/blog" >BLOG</a></li>
+                    </ul>
+                </div>
+                <i class="fa" onclick="showMenu()"><img src=".\static\icons8-menu-24.png" ></i>
+            </nav>
+            
+        </section>
+       <!--blog page content-->
+       <section class="course">
+        <h2>BLOG </h2>
+        <img src=".\static\Colorful India.jpg">
+            <div class="row">
+                <div class="course-col">
+                    
+                    <p>
+                        Crop yield prediction is an essential task for the decision-makers at national and regional levels for rapid decision-making.<br>
+                        An accurate crop yield prediction model can help farmers to decide on what to grow and when to grow. <br>
+                        To prepare for the coming disaster, developing nations like India with their exponential <br>
+                        population increase should concentrate on cutting-edge agricultural technologies. <br>
+                        Early-stage crop yield prediction is one of the most important activities since it <br>
+                        is one of the most difficult tasks in precision agriculture because it necessitates a <br>
+                        thorough comprehension of the growth pattern with the highly nonlinear characteristics. <br>
+                        Environmental factors including humidity, temperature, and rainfall, as well as management<br>
+                         techniques like irrigation, herbicides, and fertilizers, are quite dynamic and differ from <br>
+                        field to field. Data for the proposed work were gathered over a 10 year period from five different<br> 
+                        fields like Cotton, Maize, Rice, Wheat and Groundnut in 32 districts across Telangana.<br>
+                        Title :Crop Yield Prediction System using cloud-based Machine Learning models across Telangana state<br>
+                        Data Set Collection :Crop yield is primarily dependent on attributes like temperature, Rainfall,<br>
+                         Irrigation level, soil type and also  on soil nutrients ( M,N,K,Zn,Cu). We predicted yield based <br>
+                        on these parameters and data is collected from different sources:<br> 
+                        <a href="https://agricoop.nic.in/sites/default/files/pocketbook_0.pdf" target="_blank">https://agricoop.nic.in/sites/default/files/pocketbook_0.pdf</a> 
+                        <a href="https://data.telangana.gov.in/dataset/telangana.gov.in" target="_blank">https://data.telangana.gov.in/dataset/telangana.gov.in</a>
+                        <a href="http://data.desagri.gov.in/website/crops-apy-report-web" target="_blank">http://data.desagri.gov.in/website/crops-apy-report-web</a>
+                    </p>
+                    <br>
+                    
+                    
+                </div>
+                <!--div class="blog-right">
+                    <h3>POST CATEGORIES</h3>
+                    <div>
+                        <span>Business analytics</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>red light</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>green light</span>
+                        <span>21</span>
+                    </div>
+                </div-->
+            </div>
+       </section>
+        <!--footer-->
+        <section class="footer">
+            <ul>
+                <li><a href="/" >HOME</a></li>
+                <li><a href="/Yield" >YIELD PREDICTION</a></li>
+                <li><a href="/data" >DATA</a></li>
+                <li><a href="/blog" >BLOG</a></li>
+                </ul>
+                <p>Made by Koosuru Vardhini</p>
+        </section>
+
+        <!---Javascript code-->
+        <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>
